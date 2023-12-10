@@ -15,7 +15,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       </head>
 
       <body>
-        <main className="p-safe">
+        <main>
           <section className="px-4 py-8 sm:px-0 max-w-3xl mx-auto">
             {children}
           </section>

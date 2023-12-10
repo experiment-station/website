@@ -3,7 +3,7 @@ import { CgArrowTopRight } from 'react-icons/cg';
 import Image from 'next/image';
 
 const title = 'Experiment Station';
-const description = `We're trying to build stuff. We'll see how it goes.`;
+const description = `We're trying to build stuff, we'll see how it goes.`;
 const email = 'experiment-station@proton.me';
 
 export const metadata: Metadata = {
@@ -45,7 +45,7 @@ const projects = [
 export default function Page() {
   return (
     <>
-      <div className="relative h-16 w-16 rounded-2xl overflow-hidden border border-teal-400">
+      <div className="relative h-16 w-16 rounded-2xl overflow-hidden border-2 border-teal-800">
         <Image alt="Experiment Station's logo" fill src="/logo.png" />
       </div>
 
@@ -72,7 +72,7 @@ export default function Page() {
               </div>
 
               <div className="flex flex-1 flex-col gap-0.5">
-                <span className="font-medium">{item.name}</span>
+                <span>{item.name}</span>
 
                 <a
                   className="flex flex-row items-center self-start text-teal-400 hover:text-teal-200"
@@ -100,7 +100,7 @@ export default function Page() {
         {projects.map((item) => (
           <div key={item.url} className="flex flex-1 flex-col gap-0.5">
             <a
-              className="flex flex-row items-center font-medium text-base self-start text-teal-400 hover:text-teal-200"
+              className="flex flex-row items-center text-base self-start text-teal-400 hover:text-teal-200 gap-0.5"
               href={item.url}
               rel="noopener noreferrer"
               target="_blank"
