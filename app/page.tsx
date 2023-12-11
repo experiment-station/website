@@ -37,7 +37,7 @@ const projects = [
   {
     title: 'Browsercare',
     description:
-      'A tool for fine-tuning supported browser coverage of web projects.',
+      'Privacy-centric, data-driven browser coverage tool for your web projects.',
     url: 'https://browser.care',
   },
 ];
