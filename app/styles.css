@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    @apply bg-neutral-950;
     @apply text-neutral-200;
     @apply antialiased;
     @apply font-mono;
