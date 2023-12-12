@@ -13,7 +13,6 @@
 
   body {
     @apply min-h-screen;
-    @apply text-sm;
     @apply bg-gradient-to-b from-neutral-950 to-neutral-900;
   }
 

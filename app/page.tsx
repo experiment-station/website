@@ -30,14 +30,13 @@ const people = [
 
 const projects = [
   {
-    title: 'Beecast',
+    title: 'beecast.ai',
     description: 'Your hard-working AI podcast companion.',
     url: 'https://beecast.ai',
   },
   {
-    title: 'Browsercare',
-    description:
-      'Privacy-centric, data-driven browser coverage tool for your web projects.',
+    title: 'browser.care',
+    description: 'Privacy-centric, data-driven browser coverage tool.',
     url: 'https://browser.care',
   },
 ];
@@ -45,7 +44,7 @@ const projects = [
 export default function Page() {
   return (
     <>
-      <div className="relative h-16 w-16 rounded-2xl overflow-hidden border-2 border-teal-800">
+      <div className="relative h-16 w-16 rounded-2xl overflow-hidden border-2 border-neutral-800">
         <Image alt="Experiment Station's logo" fill src="/logo.png" />
       </div>
 
@@ -62,7 +61,7 @@ export default function Page() {
         {people.map((item) => (
           <div key={item.url}>
             <div className="flex flex-row items-center gap-2">
-              <div className="relative h-12 w-12 overflow-hidden rounded border border-solid border-neutral-900">
+              <div className="relative h-16 w-16 overflow-hidden rounded border border-solid border-neutral-900">
                 <Image
                   alt={item.name}
                   fill
@@ -75,7 +74,7 @@ export default function Page() {
                 <span>{item.name}</span>
 
                 <a
-                  className="flex flex-row items-center self-start text-teal-400 hover:text-teal-200"
+                  className={`flex flex-row items-center self-start text-teal-400 hover:text-teal-200`}
                   href={item.url}
                   rel="noopener noreferrer"
                   target="_blank"
@@ -100,7 +99,7 @@ export default function Page() {
         {projects.map((item) => (
           <div key={item.url} className="flex flex-1 flex-col gap-0.5">
             <a
-              className="flex flex-row items-center text-base self-start text-teal-400 hover:text-teal-200 gap-0.5"
+              className="flex flex-row items-center self-start text-teal-400 hover:text-teal-200 gap-0.5"
               href={item.url}
               rel="noopener noreferrer"
               target="_blank"
