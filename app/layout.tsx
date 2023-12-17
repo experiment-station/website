@@ -1,4 +1,5 @@
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { berkeleyMono } from './fonts';
 import './styles.css';
 
@@ -20,6 +21,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
             {children}
           </section>
         </main>
+
+        <Analytics />
       </body>
     </html>
   );
