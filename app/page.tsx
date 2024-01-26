@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { CgArrowTopRight } from 'react-icons/cg';
+import { MoveUpRight } from 'lucide-react';
 import Image from 'next/image';
 
 const title = 'Experiment Station';
@@ -82,7 +82,7 @@ export default function Page() {
                   <span>{item.url.split('https://')[1]}</span>
 
                   <span className="text-sm">
-                    <CgArrowTopRight />
+                    <MoveUpRight />
                   </span>
                 </a>
               </div>
@@ -107,7 +107,7 @@ export default function Page() {
               <span>{item.title}</span>
 
               <span className="text-sm">
-                <CgArrowTopRight />
+                <MoveUpRight />
               </span>
             </a>
 
